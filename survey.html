@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Apocalypse Survey</title>
+  </head>
+  <body>
+    <div class="survey">
+      <h1 id="title">Apocalypse Satisfaction Survey</h1>
+      <p>
+        The world is on fire and the end is nigh. As a dapper cartoon dog once
+        said, "This is fine".
+      </p>
+      <img
+        class="meme"
+        src="https://i.pinimg.com/originals/26/b2/50/26b250a738ea4abc7a5af4d42ad93af0.jpg"
+        alt="'This is fine' meme"
+      />
+      <p id="description">
+        As the purveyors of
+        <strong>Your Official Apocalyptic Experience&trade; </strong>we are
+        always looking for ways to improve your experience with us! In order to
+        learn from our mistakes and increase the likelihood of a positive
+        experience for you during your next apocalypse, please take a few
+        minutes to fill out our survey!
+      </p>
+      <hr />
+      <form id="survey-form" action="">
+        <fieldset>
+          <legend>Your Info</legend>
+          <!-- name input (w/id of "name", type of="text", `required`) -->
+          <label for="name" id="name-label">
+            Name:
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="First Last"
+              required
+            />
+          </label>
+          <!-- email input (w/id of "email" and validation) -->
+          <label for="email" id="email-label">
+            Email:
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="yourEmail@example.com"
+              required
+            />
+          </label>
+          <!-- number input (w/id of "number" and number-only validation.
+          include min/max validation) -->
+          <label for="number" id="number-label">
+            Age:
+            <input
+              id="number"
+              name="age"
+              type="number"
+              min="1"
+              max="200"
+              placeholder="Please input your age (optional)"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Things you would like for the next apocalypse</legend>
+          <!-- series of checkboxes each w/"value" attribute -->
+          <label for="fire-extinguisher">
+            <input
+              id="fire-extinguisher"
+              name="fire-extinguisher"
+              type="checkbox"
+              class="inline"
+              value="fire-extinguisher"
+            />
+            Fire extinguisher</label
+          >
+          <label for="chocolate">
+            <input
+              type="checkbox"
+              id="chocolate"
+              name="chocolate"
+              class="inline"
+              value="chocolate"
+            />
+            Chocolate</label
+          >
+          <label for="running-shoes">
+            <input
+              type="checkbox"
+              id="running-shoes"
+              name="running-shoes"
+              class="inline"
+              value="running-shoes"
+            />
+            Running shoes</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend to family or friends?</legend>
+          <label for="yes">
+            <input
+              type="radio"
+              id="yes"
+              name="recommended"
+              class="inline"
+              value="yes"
+              checked
+            />
+            Yes</label
+          >
+          <label for="no">
+            <input
+              type="radio"
+              id="no"
+              name="recommended"
+              class="inline"
+              value="no"
+            />
+            No</label
+          >
+          <label for="you-have-got-to-be-kidding">
+            <input
+              type="radio"
+              id="you-have-got-to-be-kidding"
+              name="recommended"
+              class="inline"
+              value="you-have-got-to-be-kidding"
+            />
+            You have got to be kidding</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Your Feedback</legend>
+          <!-- some sort of drop down selectable menu -->
+          <label for="dropdown">
+            Rate your satisfaction
+            <select name="satisfaction" id="dropdown">
+              <option value="">--Please choose one--</option>
+              <option value="1">1 - Literally, the worst</option>
+              <option value="2">2 - Pretty terrible</option>
+              <option value="3">3 - Bad, but I can handle it</option>
+              <option value="4">4 - Pretty darn good</option>
+              <option value="5">5 - The best! I couldn't ask for more</option>
+            </select>
+          </label>
+          <!-- textarea for additional comments, etc. -->
+          <label for="screamBox"
+            >Scream Box
+            <textarea
+              id="screamBox"
+              name="screamBox"
+              placeholder="Use this area as a way to digitally scream into the void...."
+            ></textarea>
+          </label>
+        </fieldset>
+        <!-- button with id="submit" -->
+        <div class="center">
+          <input type="reset" id="reset" value="Reset" />
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
